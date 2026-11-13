@@ -10,7 +10,7 @@ carriage bumper ([Thingiverse 3816051](https://www.thingiverse.com/thing:3816051
 |---|---|---|
 | ![Printer overview](images/printer-overview.jpg) | ![Direct drive close-up](images/direct-drive-closeup.jpg) | ![Direct drive side view](images/direct-drive-side.jpg) |
 
-Stock Creality extruder moved onto the X carriage with a printed mount, BLTouch on the left of the
+Red aluminium (MK8-style) extruder moved onto the X carriage with a printed mount, BLTouch on the left of the
 hotend (offset X −45, Y 0).
 
 ## The problem this solves
