@@ -51,9 +51,10 @@ Dokładne zmiany są w [`config/Configuration.h.diff`](config/Configuration.h.di
 2. Wyłącz drukarkę, włóż kartę, włącz. Ekran jest czarny przez 10–30 s.
 3. Na pytanie o EEPROM wybierz **Reset**.
 4. Wgraj swoje ustawienia, na przykład [`gcode/po_flashu.gcode`](gcode/po_flashu.gcode)
-   z **twoimi** wartościami PID/E-steps (odczytaj je `M503` przed flashem).
-5. Ustaw Z-offset: *Configuration → Probe Offsets → Z Probe Wizard* → *Store Settings*.
-6. Cura → ustawienia maszyny: **szerokość 204, wysokość 210**.
+   z **twoimi** E-steps (odczytaj je `M503` przed flashem).
+5. **Zrób kalibrację PID hotendu**: [`gcode/pid_hotend.gcode`](gcode/pid_hotend.gcode) (5–8 min).
+6. Ustaw Z-offset: *Configuration → Probe Offsets → Z Probe Wizard* → *Store Settings*.
+7. Cura → ustawienia maszyny: **szerokość 204, wysokość 210**.
 
 Start G-code dla Cury: [`gcode/start_gcode_cura.gcode`](gcode/start_gcode_cura.gcode).
 
@@ -61,6 +62,10 @@ Start G-code dla Cury: [`gcode/start_gcode_cura.gcode`](gcode/start_gcode_cura.g
 
 - **`Error:Probing Failed` zaraz po uderzeniu w bumper:** BLTouch był w alarmie (miga na czerwono).
   Pomaga `M280 P0 S160` (reset alarmu) albo restart drukarki.
+- **`Heating Failed E1`, dysza staje na ~220°C:** to przez PID przeniesiony ze starego firmware
+  Creality (`M301 P10.30 I0.53 D49.80`). Na Marlinie 2.1 jest za słaby: blisko celu grzałka
+  dostaje ~30% mocy. Po `M303 E0 S210 C8 U1` (z wentylatorem na 100%) wyszło `P27.80 I2.59 D74.51`
+  i dysza trzyma 228°C ±1°C.
 - **Duży przechył lewo–prawo** (u mnie ~3,5 mm przy prawie płaskim przód–tył): cięższa głowica
   direct drive potrafi przechylić belkę X, bo śruba Z jest tylko po lewej. Zgrubnie popraw to
   pokrętłami stołu albo mimośrodem prawego wózka belki X. Resztę skompensuje siatka. Przy dużym
