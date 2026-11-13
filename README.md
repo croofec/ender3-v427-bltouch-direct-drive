@@ -52,6 +52,8 @@ Exact changes: [`config/Configuration.h.diff`](config/Configuration.h.diff) and
 
 ## Flashing
 
+**Download:** [latest release](https://github.com/croofec/ender3-v427-bltouch-direct-drive/releases/latest) (`firmware-*.bin`).
+
 1. FAT32 SD card with **only** `firmware/firmware-*.bin` in the root directory.
    The 4.2.7 board needs a new filename for every flash; the timestamp in the name takes care of that.
 2. Power off, insert the card, power on. The screen stays black for 10–30 s.
