@@ -8,7 +8,11 @@ carriage bumper ([Thingiverse 3816051](https://www.thingiverse.com/thing:3816051
 
 The direct drive mod is shown in [**3D Printed Direct-Drive for the Ender 3**](https://www.youtube.com/watch?v=Zbk0viFC1ew) by YouMakeTech:
 
-[![3D Printed Direct-Drive for the Ender 3](https://i.ytimg.com/vi/Zbk0viFC1ew/hqdefault.jpg)](https://www.youtube.com/watch?v=Zbk0viFC1ew)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=Zbk0viFC1ew">
+    <img src="https://i.ytimg.com/vi/Zbk0viFC1ew/hqdefault.jpg" alt="3D Printed Direct-Drive for the Ender 3" width="480">
+  </a>
+</p>
 
 ## Photos
 
