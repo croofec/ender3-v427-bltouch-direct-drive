@@ -56,7 +56,29 @@ Dokładne zmiany są w [`config/Configuration.h.diff`](config/Configuration.h.di
 6. Ustaw Z-offset: *Configuration → Probe Offsets → Z Probe Wizard* → *Store Settings*.
 7. Cura → ustawienia maszyny: **szerokość 204, wysokość 210**.
 
-Start G-code dla Cury: [`gcode/start_gcode_cura.gcode`](gcode/start_gcode_cura.gcode).
+Start G-code dla Cury:
+- [`gcode/start_gcode_cura.gcode`](gcode/start_gcode_cura.gcode): `G29` przed każdym wydrukiem (+1,5–2 min),
+- [`gcode/start_gcode_cura_fast.gcode`](gcode/start_gcode_cura_fast.gcode): `M420 S1`, wczytuje zapisaną siatkę
+  bez pomiaru. Nową siatkę rób (`G29` + `M500`) po kręceniu pokrętłami stołu albo raz na kilka tygodni.
+
+## Ustawienia Cury po przejściu na direct drive
+
+**Preferences → Printers → Machine Settings:** Width (X) **204**, Depth (Y) **235**, Height (Z) **210**.
+
+Retrakcja z bowdena (5–6 mm) jest dla direct drive za duża:
+
+| Ustawienie | PLA / PETG | TPU 93A |
+|---|---|---|
+| Printing Temperature | wg producenta | 225–235°C |
+| Build Plate Temperature | 60 / 75°C | 50°C |
+| Print Speed | 50–60 mm/s | 20–30 mm/s |
+| Initial Layer Speed | 20 mm/s | 15 mm/s |
+| Retraction Distance | ~1 mm | 0,8–1 mm |
+| Retraction Speed | 35–40 mm/s | 20–25 mm/s |
+| Combing Mode | Not on Outer Surface | Not on Outer Surface |
+| Fan Speed | 100% / 50% | 30–50% |
+
+TPU: poluzuj trochę docisk ekstrudera, susz filament (50°C, 4–6 h), na PEI nie używaj kleju.
 
 ## Uwagi z uruchamiania
 
