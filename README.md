@@ -4,6 +4,15 @@ Ready-to-flash Marlin firmware for a **Creality Ender 3** with the silent **4.2.
 a **BLTouch** on the board's dedicated 5-pin port, and a **direct drive** conversion with a
 carriage bumper ([Thingiverse 3816051](https://www.thingiverse.com/thing:3816051)).
 
+## Photos
+
+| Overview | Direct drive head | Side view |
+|---|---|---|
+| ![Printer overview](images/printer-overview.jpg) | ![Direct drive close-up](images/direct-drive-closeup.jpg) | ![Direct drive side view](images/direct-drive-side.jpg) |
+
+Stock Creality extruder moved onto the X carriage with a printed mount, BLTouch on the left of the
+hotend (offset X −45, Y 0).
+
 ## The problem this solves
 
 After the direct drive conversion and adding the bumper:
