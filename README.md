@@ -4,6 +4,12 @@ Ready-to-flash Marlin firmware for a **Creality Ender 3** with the silent **4.2.
 a **BLTouch** on the board's dedicated 5-pin port, and a **direct drive** conversion with a
 carriage bumper ([Thingiverse 3816051](https://www.thingiverse.com/thing:3816051)).
 
+## Build video
+
+The direct drive mod is shown in [**3D Printed Direct-Drive for the Ender 3**](https://www.youtube.com/watch?v=Zbk0viFC1ew) by YouMakeTech:
+
+[![3D Printed Direct-Drive for the Ender 3](https://i.ytimg.com/vi/Zbk0viFC1ew/hqdefault.jpg)](https://www.youtube.com/watch?v=Zbk0viFC1ew)
+
 ## Photos
 
 | Overview | Direct drive head | Side view |
